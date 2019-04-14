@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 	"strings"
 	"time"
@@ -54,7 +53,8 @@ func main() {
 	out, err := Run("go", "list", "-m", "-u", "-json", "all")
 	if err != nil {
 		exitStatus = 1
-		log.Fatal(err)
+		fmt.Fprintln(os.Stderr, err.Error())
+		return
 	}
 
 	// make list a valid JSON list
@@ -66,7 +66,8 @@ func main() {
 	err = json.Unmarshal([]byte(out), &modules)
 	if err != nil {
 		exitStatus = 1
-		log.Fatal(err)
+		fmt.Fprintln(os.Stderr, err.Error())
+		return
 	}
 
 	// check every modules one-by-one
