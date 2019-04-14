@@ -31,7 +31,8 @@ type ModuleError struct {
 }
 
 func main() {
-	checkOldPkgs := flag.Bool("old", false, "check for modules without updates for the last 6 months")
+	checkOldPkgs := flag.Bool("check-old", false, "check for modules without updates for the last 6 months")
+	checkIndirect := flag.Bool("check-indirect", false, "check indirect modules")
 	ignoredPkgs := flag.StringSliceP("ignore", "i", []string{}, "coma separated list of packages to ignore")
 	flag.Parse()
 
@@ -61,19 +62,23 @@ func main() {
 			continue
 		}
 
+		tag := ""
 		if m.Indirect {
-			continue
+			if !*checkIndirect {
+				continue
+			}
+			tag = "[indirect] "
 		}
 
 		// Report if the package has been replaced
 		if m.Replace != nil {
-			fmt.Printf("%s has been replaced by %s\n", m.Path, m.Replace.Path)
+			fmt.Printf(tag+"%s has been replaced by %s\n", m.Path, m.Replace.Path)
 			continue
 		}
 
 		// Report if the package has an update available
 		if m.Update != nil {
-			fmt.Printf("%s can be updated to %s\n", m.Path, m.Update.Version)
+			fmt.Printf(tag+"%s can be updated to %s\n", m.Path, m.Update.Version)
 			continue
 		}
 
@@ -81,7 +86,7 @@ func main() {
 		if *checkOldPkgs && m.Time != nil {
 			sixMonths := 6 * 30 * 24 * time.Hour
 			if time.Since(*m.Time) >= sixMonths {
-				fmt.Printf("%s hasn't been updated in over 6 months (%s)\n", m.Path, m.Time.String())
+				fmt.Printf(tag+"%s hasn't been updated in over 6 months (%s)\n", m.Path, m.Time.String())
 				continue
 			}
 		}
