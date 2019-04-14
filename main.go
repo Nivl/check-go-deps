@@ -111,7 +111,8 @@ func checkModule(f *Flags, m *Module) (needsUpdate bool) {
 	if f.CheckOldPkgs && m.Time != nil {
 		sixMonths := 6 * 30 * 24 * time.Hour
 		if time.Since(*m.Time) >= sixMonths {
-			write(tag, "%s hasn't been updated in over 6 months (%s)", m.Path, m.Time.String())
+			monthsPassed := time.Since(*m.Time) / (24 * time.Hour) / 30
+			write(tag, "%s hasn't been updated in over %d months (since %s)", m.Path, monthsPassed, m.Time.Format("2006/01/02"))
 			return true
 		}
 	}
@@ -122,10 +123,8 @@ func write(tag, format string, a ...interface{}) {
 	if tag != "" {
 		tag += " "
 	}
-
 	if !strings.HasSuffix(format, "\n") {
 		format += "\n"
 	}
-
 	fmt.Printf(tag+format, a...)
 }
