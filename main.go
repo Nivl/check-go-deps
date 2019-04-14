@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"os"
 	"strings"
 	"time"
 
@@ -38,6 +39,11 @@ type Flags struct {
 }
 
 func main() {
+	exitStatus := 0
+	defer func() {
+		os.Exit(exitStatus)
+	}()
+
 	flags := &Flags{}
 	flag.BoolVar(&flags.CheckOldPkgs, "check-old", false, "check for modules without updates for the last 6 months")
 	flag.BoolVar(&flags.CheckIndirects, "check-indirects", false, "check indirect modules")
@@ -47,6 +53,7 @@ func main() {
 	// get an invalid JSON list of all modules
 	out, err := Run("go", "list", "-m", "-u", "-json", "all")
 	if err != nil {
+		exitStatus = 1
 		log.Fatal(err)
 	}
 
@@ -58,51 +65,67 @@ func main() {
 	modules := []*Module{}
 	err = json.Unmarshal([]byte(out), &modules)
 	if err != nil {
+		exitStatus = 1
 		log.Fatal(err)
 	}
 
 	// check every modules one-by-one
 	for _, m := range modules {
-		checkModule(flags, m)
+		if checkModule(flags, m) {
+			exitStatus = 1
+		}
 	}
 }
 
 // checkModule checks a single module and prints its status
-func checkModule(f *Flags, m *Module) {
+func checkModule(f *Flags, m *Module) (needsUpdate bool) {
 	for _, pkg := range f.IgnoredPkgs {
 		if strings.HasPrefix(m.Path, pkg) {
-			return
+			return false
 		}
 	}
 
 	if m.Indirect && !f.CheckIndirects {
-		return
+		return false
 	}
 
 	// Set the tags
 	tag := ""
 	if m.Indirect {
-		tag = "[indirect] "
+		tag += "[indirect]"
 	}
 
 	// Report if the package has been replaced
 	if m.Replace != nil {
-		fmt.Printf(tag+"%s has been replaced by %s\n", m.Path, m.Replace.Path)
-		return
+		write(tag, "%s has been replaced by %s", m.Path, m.Replace.Path)
+		return true
 	}
 
 	// Report if the package has an update available
 	if m.Update != nil {
-		fmt.Printf(tag+"%s can be updated to %s\n", m.Path, m.Update.Version)
-		return
+		write(tag, "%s can be updated to %s", m.Path, m.Update.Version)
+		return true
 	}
 
 	// Report if the package hasn't been updated in 6 months
 	if f.CheckOldPkgs && m.Time != nil {
 		sixMonths := 6 * 30 * 24 * time.Hour
 		if time.Since(*m.Time) >= sixMonths {
-			fmt.Printf(tag+"%s hasn't been updated in over 6 months (%s)\n", m.Path, m.Time.String())
-			return
+			write(tag, "%s hasn't been updated in over 6 months (%s)", m.Path, m.Time.String())
+			return true
 		}
 	}
+	return false
+}
+
+func write(tag, format string, a ...interface{}) {
+	if tag != "" {
+		tag += " "
+	}
+
+	if !strings.HasSuffix(format, "\n") {
+		format += "\n"
+	}
+
+	fmt.Printf(tag+format, a...)
 }
