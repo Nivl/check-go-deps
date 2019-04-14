@@ -2,11 +2,12 @@ package main
 
 import (
 	"encoding/json"
-	"flag"
 	"fmt"
 	"log"
 	"strings"
 	"time"
+
+	flag "github.com/spf13/pflag"
 )
 
 // Module represent a single Go module
@@ -30,7 +31,8 @@ type ModuleError struct {
 }
 
 func main() {
-	var checkOld = flag.Bool("old", false, "check for modules without updates for the last 6 months")
+	checkOldPkgs := flag.Bool("old", false, "check for modules without updates for the last 6 months")
+	ignoredPkgs := flag.StringSliceP("ignore", "i", []string{}, "coma separated list of packages to ignore")
 	flag.Parse()
 
 	out, err := Run("go", "list", "-m", "-u", "-json", "all")
@@ -49,21 +51,34 @@ func main() {
 	}
 
 	for _, m := range modules {
+		skip := false
+		for _, pkg := range *ignoredPkgs {
+			if strings.HasPrefix(m.Path, pkg) {
+				skip = true
+			}
+		}
+		if skip {
+			continue
+		}
+
 		if m.Indirect {
 			continue
 		}
 
+		// Report if the package has been replaced
 		if m.Replace != nil {
 			fmt.Printf("%s has been replaced by %s\n", m.Path, m.Replace.Path)
 			continue
 		}
 
+		// Report if the package has an update available
 		if m.Update != nil {
 			fmt.Printf("%s can be updated to %s\n", m.Path, m.Update.Version)
 			continue
 		}
 
-		if *checkOld && m.Time != nil {
+		// Report if the package hasn't been updated in 6 months
+		if *checkOldPkgs && m.Time != nil {
 			sixMonths := 6 * 30 * 24 * time.Hour
 			if time.Since(*m.Time) >= sixMonths {
 				fmt.Printf("%s hasn't been updated in over 6 months (%s)\n", m.Path, m.Time.String())
