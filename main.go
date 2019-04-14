@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"log"
 	"strings"
@@ -29,6 +30,9 @@ type ModuleError struct {
 }
 
 func main() {
+	var checkOld = flag.Bool("old", false, "check for modules without updates for the last 6 months")
+	flag.Parse()
+
 	out, err := Run("go", "list", "-m", "-u", "-json", "all")
 	if err != nil {
 		log.Fatal(err)
@@ -59,8 +63,7 @@ func main() {
 			continue
 		}
 
-		// TODO(melvin): need a flag to activate
-		if m.Time != nil {
+		if *checkOld && m.Time != nil {
 			sixMonths := 6 * 30 * 24 * time.Hour
 			if time.Since(*m.Time) >= sixMonths {
 				fmt.Printf("%s hasn't been updated in over 6 months (%s)\n", m.Path, m.Time.String())
