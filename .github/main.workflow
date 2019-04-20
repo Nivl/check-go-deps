@@ -6,7 +6,7 @@ workflow "Lint" {
 }
 
 action "golangci-lint" {
-  uses = "cedrickring/golang-action@1.2.0"
+  uses = "cedrickring/golang-action@1.3.0"
   args = "./tools/lint.sh"
   env = {
     GO111MODULE = "on"
