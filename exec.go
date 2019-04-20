@@ -10,7 +10,7 @@ import (
 
 // Exec runs a program and returns stdout, stderr, and any
 // error that might have occurred
-func Exec(name string, arg ...string) (stdout string, stderr string, err error) {
+func Exec(name string, arg ...string) (stdout, stderr string, err error) {
 	cmd := exec.Command(name, arg...)
 
 	// we pipe stderr to get the error message if something goes wrong
