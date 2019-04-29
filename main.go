@@ -162,6 +162,11 @@ func checkModule(f *Flags, m *Module, r *Results) {
 
 	// Report if the package has an update available
 	if m.Update != nil {
+		// It's possible that a tag appears as an "update" from a commit, even
+		// if that tag is older
+		if (m.Time != nil && m.Update.Time != nil) && m.Time.After(*m.Update.Time) {
+			return
+		}
 		r.Updated = append(r.Updated, m)
 		return
 	}
