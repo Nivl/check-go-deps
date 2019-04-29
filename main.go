@@ -4,9 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
+	"github.com/olekukonko/tablewriter"
 	flag "github.com/spf13/pflag"
 )
 
@@ -35,6 +37,20 @@ type Flags struct {
 	CheckOldPkgs  bool
 	CheckIndirect bool
 	IgnoredPkgs   []string
+}
+
+// Results contains all the modules that need to be reported
+type Results struct {
+	Updated  []*Module
+	Replaced []*Module
+	Old      []*Module
+}
+
+// HasModules checks if the results contains any modules
+func (r *Results) HasModules() bool {
+	return len(r.Updated) > 0 ||
+		len(r.Replaced) > 0 ||
+		len(r.Old) > 0
 }
 
 func main() {
@@ -71,61 +87,91 @@ func main() {
 	}
 
 	// check every modules one-by-one
+	res := &Results{}
 	for _, m := range modules {
-		if checkModule(flags, m) {
-			exitStatus = 1
+		checkModule(flags, m, res)
+	}
+
+	if res.HasModules() {
+		exitStatus = 1
+	}
+
+	// Print the result
+	// Updated
+	if len(res.Updated) > 0 {
+		table := tablewriter.NewWriter(os.Stderr)
+		table.SetHeader([]string{"Module", "Current Version", "New Version", "Indirect"})
+		for _, m := range res.Updated {
+			table.Append([]string{
+				m.Path,
+				m.Version,
+				m.Update.Version,
+				strconv.FormatBool(m.Indirect),
+			})
 		}
+		table.Render()
+	}
+
+	// Replaced
+	if len(res.Replaced) > 0 {
+		table := tablewriter.NewWriter(os.Stderr)
+		table.SetHeader([]string{"Module", "Replaced By", "Indirect"})
+		for _, m := range res.Replaced {
+			table.Append([]string{
+				m.Path,
+				m.Replace.Path,
+				strconv.FormatBool(m.Indirect),
+			})
+		}
+		table.Render()
+	}
+
+	// Old
+	if len(res.Old) > 0 {
+		table := tablewriter.NewWriter(os.Stderr)
+		table.SetHeader([]string{"Module", "Last update", "Indirect"})
+		for _, m := range res.Old {
+			monthsPassed := time.Since(*m.Time) / (24 * time.Hour) / 30
+			table.Append([]string{
+				m.Path,
+				fmt.Sprintf("%d months ago (%s)", monthsPassed, m.Time.Format("2006/01/02")),
+				strconv.FormatBool(m.Indirect),
+			})
+		}
+		table.Render()
 	}
 }
 
 // checkModule checks a single module and prints its status
-func checkModule(f *Flags, m *Module) (needsUpdate bool) {
+func checkModule(f *Flags, m *Module, r *Results) {
 	for _, pkg := range f.IgnoredPkgs {
 		if strings.HasPrefix(m.Path, pkg) {
-			return false
+			return
 		}
 	}
 
 	if m.Indirect && !f.CheckIndirect {
-		return false
-	}
-
-	// Set the tags
-	tag := ""
-	if m.Indirect {
-		tag += "[indirect]"
+		return
 	}
 
 	// Report if the package has been replaced
 	if m.Replace != nil {
-		write(tag, "%s has been replaced by %s", m.Path, m.Replace.Path)
-		return true
+		r.Replaced = append(r.Replaced, m)
+		return
 	}
 
 	// Report if the package has an update available
 	if m.Update != nil {
-		write(tag, "%s can be updated to %s", m.Path, m.Update.Version)
-		return true
+		r.Updated = append(r.Updated, m)
+		return
 	}
 
 	// Report if the package hasn't been updated in 6 months
 	if f.CheckOldPkgs && m.Time != nil {
 		sixMonths := 6 * 30 * 24 * time.Hour
 		if time.Since(*m.Time) >= sixMonths {
-			monthsPassed := time.Since(*m.Time) / (24 * time.Hour) / 30
-			write(tag, "%s hasn't been updated in over %d months (since %s)", m.Path, monthsPassed, m.Time.Format("2006/01/02"))
-			return true
+			r.Old = append(r.Old, m)
+			return
 		}
 	}
-	return false
-}
-
-func write(tag, format string, a ...interface{}) {
-	if tag != "" {
-		tag += " "
-	}
-	if !strings.HasSuffix(format, "\n") {
-		format += "\n"
-	}
-	fmt.Printf(tag+format, a...)
 }
