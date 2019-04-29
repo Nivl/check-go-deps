@@ -32,9 +32,9 @@ type ModuleError struct {
 
 // Flags represents all the flags accepted by the CLI
 type Flags struct {
-	CheckOldPkgs   bool
-	CheckIndirects bool
-	IgnoredPkgs    []string
+	CheckOldPkgs  bool
+	CheckIndirect bool
+	IgnoredPkgs   []string
 }
 
 func main() {
@@ -44,8 +44,8 @@ func main() {
 	}()
 
 	flags := &Flags{}
-	flag.BoolVar(&flags.CheckOldPkgs, "check-old", false, "check for modules without updates for the last 6 months")
-	flag.BoolVar(&flags.CheckIndirects, "check-indirects", false, "check indirect modules")
+	flag.BoolVar(&flags.CheckOldPkgs, "old", false, "check for modules without updates for the last 6 months")
+	flag.BoolVar(&flags.CheckIndirect, "indirect", false, "check indirect modules")
 	flag.StringSliceVarP(&flags.IgnoredPkgs, "ignore", "i", []string{}, "coma separated list of packages to ignore")
 	flag.Parse()
 
@@ -86,7 +86,7 @@ func checkModule(f *Flags, m *Module) (needsUpdate bool) {
 		}
 	}
 
-	if m.Indirect && !f.CheckIndirects {
+	if m.Indirect && !f.CheckIndirect {
 		return false
 	}
 

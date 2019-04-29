@@ -14,8 +14,8 @@ received any updates in the last 6 months (they might no longer be maintained).
 
 `check-deps [flags]`
 
-| Flag              | Description                                             |
-| ----------------- | ------------------------------------------------------- |
-| --check-old       | check for modules without updates for the last 6 months |
-| --ignore, -i      | coma separated list of packages to ignore               |
-| --check-indirects | check indirect modules                                  |
+| Flag         | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| --old        | check for modules without updates for the last 6 months |
+| --ignore, -i | coma separated list of packages to ignore               |
+| --indirect   | check indirect modules                                  |
