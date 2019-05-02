@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/Nivl/check-deps/modutil"
+	"github.com/Nivl/check-go-deps/modutil"
 	"github.com/stretchr/testify/require"
 )
 

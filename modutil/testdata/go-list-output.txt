@@ -1,8 +1,8 @@
 {
-	"Path": "github.com/Nivl/check-deps",
+	"Path": "github.com/Nivl/check-go-deps",
 	"Main": true,
-	"Dir": "/Users/melvin/Documents/projects/check-deps",
-	"GoMod": "/Users/melvin/Documents/projects/check-deps/go.mod",
+	"Dir": "/Users/melvin/Documents/projects/check-go-deps",
+	"GoMod": "/Users/melvin/Documents/projects/check-go-deps/go.mod",
 	"GoVersion": "1.12"
 }
 {

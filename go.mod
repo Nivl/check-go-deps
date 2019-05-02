@@ -1,4 +1,4 @@
-module github.com/Nivl/check-deps
+module github.com/Nivl/check-go-deps
 
 go 1.12
 

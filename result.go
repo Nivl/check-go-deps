@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Nivl/check-deps/modutil"
+	"github.com/Nivl/check-go-deps/modutil"
 	"github.com/olekukonko/tablewriter"
 )
 
