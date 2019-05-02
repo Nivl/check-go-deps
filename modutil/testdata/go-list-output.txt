@@ -1,0 +1,752 @@
+{
+	"Path": "github.com/Nivl/check-deps",
+	"Main": true,
+	"Dir": "/Users/melvin/Documents/projects/check-deps",
+	"GoMod": "/Users/melvin/Documents/projects/check-deps/go.mod",
+	"GoVersion": "1.12"
+}
+{
+	"Path": "github.com/BurntSushi/toml",
+	"Version": "v0.3.1",
+	"Time": "2018-08-15T10:47:33Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/!burnt!sushi/toml@v0.3.1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/!burnt!sushi/toml/@v/v0.3.1.mod"
+}
+{
+	"Path": "github.com/OpenPeeDeeP/depguard",
+	"Version": "v0.0.0-20180806142446-a69c782687b2",
+	"Time": "2018-08-06T14:24:46Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/!open!pee!dee!p/depguard@v0.0.0-20180806142446-a69c782687b2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/!open!pee!dee!p/depguard/@v/v0.0.0-20180806142446-a69c782687b2.mod"
+}
+{
+	"Path": "github.com/StackExchange/wmi",
+	"Version": "v0.0.0-20180116203802-5d049714c4a6",
+	"Time": "2018-01-16T20:38:02Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/!stack!exchange/wmi/@v/v0.0.0-20180116203802-5d049714c4a6.mod"
+}
+{
+	"Path": "github.com/davecgh/go-spew",
+	"Version": "v1.1.1",
+	"Time": "2018-02-21T23:26:28Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/davecgh/go-spew@v1.1.1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/davecgh/go-spew/@v/v1.1.1.mod"
+}
+{
+	"Path": "github.com/fatih/color",
+	"Version": "v1.6.0",
+	"Time": "2018-02-13T13:34:03Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/fatih/color@v1.6.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/fatih/color/@v/v1.6.0.mod"
+}
+{
+	"Path": "github.com/fsnotify/fsnotify",
+	"Version": "v1.4.7",
+	"Time": "2018-01-10T05:33:47Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/fsnotify/fsnotify@v1.4.7",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/fsnotify/fsnotify/@v/v1.4.7.mod"
+}
+{
+	"Path": "github.com/go-critic/go-critic",
+	"Version": "v0.0.0-20181204210945-ee9bf5809ead",
+	"Time": "2019-02-10T22:04:43Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-critic/go-critic@v0.0.0-20181204210945-ee9bf5809ead",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-critic/go-critic/@v/v0.0.0-20181204210945-ee9bf5809ead.mod"
+}
+{
+	"Path": "github.com/go-lintpack/lintpack",
+	"Version": "v0.5.2",
+	"Time": "2019-01-03T10:21:43Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-lintpack/lintpack@v0.5.2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-lintpack/lintpack/@v/v0.5.2.mod"
+}
+{
+	"Path": "github.com/go-ole/go-ole",
+	"Version": "v1.2.1",
+	"Time": "2017-11-10T16:07:06Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-ole/go-ole/@v/v1.2.1.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/astcast",
+	"Version": "v0.0.0-20181028201508-b7a89ed70af1",
+	"Time": "2018-10-28T20:15:08Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/astcast@v0.0.0-20181028201508-b7a89ed70af1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/astcast/@v/v0.0.0-20181028201508-b7a89ed70af1.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/astcopy",
+	"Version": "v0.0.0-20180903214859-79b422d080c4",
+	"Time": "2018-09-03T21:48:59Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/astcopy@v0.0.0-20180903214859-79b422d080c4",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/astcopy/@v/v0.0.0-20180903214859-79b422d080c4.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/astequal",
+	"Version": "v0.0.0-20180903214952-dcb477bfacd6",
+	"Time": "2018-09-03T21:49:52Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/astequal@v0.0.0-20180903214952-dcb477bfacd6",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/astequal/@v/v0.0.0-20180903214952-dcb477bfacd6.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/astfmt",
+	"Version": "v0.0.0-20180903215011-8f8ee99c3086",
+	"Time": "2018-09-03T21:50:11Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/astfmt@v0.0.0-20180903215011-8f8ee99c3086",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/astfmt/@v/v0.0.0-20180903215011-8f8ee99c3086.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/astp",
+	"Version": "v0.0.0-20180903215135-0af7e3c24f30",
+	"Time": "2018-09-03T21:51:35Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/astp@v0.0.0-20180903215135-0af7e3c24f30",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/astp/@v/v0.0.0-20180903215135-0af7e3c24f30.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/pkgload",
+	"Version": "v0.0.0-20181119091011-e9e65178eee8",
+	"Time": "2018-11-19T09:10:11Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/pkgload@v0.0.0-20181119091011-e9e65178eee8",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/pkgload/@v/v0.0.0-20181119091011-e9e65178eee8.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/strparse",
+	"Version": "v0.0.0-20180903215201-830b6daa1241",
+	"Time": "2018-09-03T21:52:01Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/strparse@v0.0.0-20180903215201-830b6daa1241",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/strparse/@v/v0.0.0-20180903215201-830b6daa1241.mod"
+}
+{
+	"Path": "github.com/go-toolsmith/typep",
+	"Version": "v0.0.0-20181030061450-d63dc7650676",
+	"Time": "2018-10-30T06:14:50Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/go-toolsmith/typep@v0.0.0-20181030061450-d63dc7650676",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/go-toolsmith/typep/@v/v0.0.0-20181030061450-d63dc7650676.mod"
+}
+{
+	"Path": "github.com/gobwas/glob",
+	"Version": "v0.2.3",
+	"Time": "2018-02-08T21:06:56Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/gobwas/glob@v0.2.3",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/gobwas/glob/@v/v0.2.3.mod"
+}
+{
+	"Path": "github.com/gogo/protobuf",
+	"Version": "v1.1.1",
+	"Time": "2018-07-17T14:19:46Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/gogo/protobuf@v1.1.1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/gogo/protobuf/@v/v1.1.1.mod"
+}
+{
+	"Path": "github.com/golang/mock",
+	"Version": "v1.1.1",
+	"Time": "2018-04-05T21:54:04Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golang/mock@v1.1.1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golang/mock/@v/v1.1.1.mod"
+}
+{
+	"Path": "github.com/golang/protobuf",
+	"Version": "v1.2.0",
+	"Time": "2018-08-14T21:14:27Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golang/protobuf@v1.2.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golang/protobuf/@v/v1.2.0.mod"
+}
+{
+	"Path": "github.com/golangci/check",
+	"Version": "v0.0.0-20180506172741-cfe4005ccda2",
+	"Time": "2018-05-06T17:27:41Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/check@v0.0.0-20180506172741-cfe4005ccda2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/check/@v/v0.0.0-20180506172741-cfe4005ccda2.mod"
+}
+{
+	"Path": "github.com/golangci/dupl",
+	"Version": "v0.0.0-20180902072040-3e9179ac440a",
+	"Time": "2018-09-02T07:20:40Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/dupl@v0.0.0-20180902072040-3e9179ac440a",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/dupl/@v/v0.0.0-20180902072040-3e9179ac440a.mod"
+}
+{
+	"Path": "github.com/golangci/errcheck",
+	"Version": "v0.0.0-20181003203344-ef45e06d44b6",
+	"Time": "2018-12-23T08:41:20Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/errcheck@v0.0.0-20181003203344-ef45e06d44b6",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/errcheck/@v/v0.0.0-20181003203344-ef45e06d44b6.mod"
+}
+{
+	"Path": "github.com/golangci/go-misc",
+	"Version": "v0.0.0-20180628070357-927a3d87b613",
+	"Time": "2018-06-28T07:03:57Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/go-misc@v0.0.0-20180628070357-927a3d87b613",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/go-misc/@v/v0.0.0-20180628070357-927a3d87b613.mod"
+}
+{
+	"Path": "github.com/golangci/go-tools",
+	"Version": "v0.0.0-20180109140146-af6baa5dc196",
+	"Time": "2019-03-18T06:02:51Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/go-tools@v0.0.0-20180109140146-af6baa5dc196",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/go-tools/@v/v0.0.0-20180109140146-af6baa5dc196.mod"
+}
+{
+	"Path": "github.com/golangci/goconst",
+	"Version": "v0.0.0-20180610141641-041c5f2b40f3",
+	"Time": "2018-06-10T14:16:41Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/goconst@v0.0.0-20180610141641-041c5f2b40f3",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/goconst/@v/v0.0.0-20180610141641-041c5f2b40f3.mod"
+}
+{
+	"Path": "github.com/golangci/gocyclo",
+	"Version": "v0.0.0-20180528134321-2becd97e67ee",
+	"Time": "2018-05-28T13:43:21Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/gocyclo@v0.0.0-20180528134321-2becd97e67ee",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/gocyclo/@v/v0.0.0-20180528134321-2becd97e67ee.mod"
+}
+{
+	"Path": "github.com/golangci/gofmt",
+	"Version": "v0.0.0-20181105071733-0b8337e80d98",
+	"Time": "2018-12-22T12:35:16Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/gofmt@v0.0.0-20181105071733-0b8337e80d98",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/gofmt/@v/v0.0.0-20181105071733-0b8337e80d98.mod"
+}
+{
+	"Path": "github.com/golangci/golangci-lint",
+	"Version": "v1.16.0",
+	"Time": "2019-03-31T19:37:05Z",
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/golangci-lint@v1.16.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/golangci-lint/@v/v1.16.0.mod"
+}
+{
+	"Path": "github.com/golangci/gosec",
+	"Version": "v0.0.0-20180901114220-66fb7fc33547",
+	"Time": "2019-02-11T06:41:07Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/gosec@v0.0.0-20180901114220-66fb7fc33547",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/gosec/@v/v0.0.0-20180901114220-66fb7fc33547.mod"
+}
+{
+	"Path": "github.com/golangci/ineffassign",
+	"Version": "v0.0.0-20180808204949-2ee8f2867dde",
+	"Time": "2018-08-08T20:49:49Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/ineffassign@v0.0.0-20180808204949-2ee8f2867dde",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/ineffassign/@v/v0.0.0-20180808204949-2ee8f2867dde.mod"
+}
+{
+	"Path": "github.com/golangci/lint-1",
+	"Version": "v0.0.0-20180610141402-4bf9709227d1",
+	"Time": "2018-06-10T14:14:02Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/lint-1@v0.0.0-20180610141402-4bf9709227d1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/lint-1/@v/v0.0.0-20180610141402-4bf9709227d1.mod"
+}
+{
+	"Path": "github.com/golangci/maligned",
+	"Version": "v0.0.0-20180506175553-b1d89398deca",
+	"Time": "2018-05-06T17:55:53Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/maligned@v0.0.0-20180506175553-b1d89398deca",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/maligned/@v/v0.0.0-20180506175553-b1d89398deca.mod"
+}
+{
+	"Path": "github.com/golangci/misspell",
+	"Version": "v0.0.0-20180809174111-950f5d19e770",
+	"Time": "2018-08-09T17:41:11Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/misspell@v0.0.0-20180809174111-950f5d19e770",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/misspell/@v/v0.0.0-20180809174111-950f5d19e770.mod"
+}
+{
+	"Path": "github.com/golangci/prealloc",
+	"Version": "v0.0.0-20180630174525-215b22d4de21",
+	"Time": "2018-06-30T17:45:25Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/prealloc@v0.0.0-20180630174525-215b22d4de21",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/prealloc/@v/v0.0.0-20180630174525-215b22d4de21.mod"
+}
+{
+	"Path": "github.com/golangci/revgrep",
+	"Version": "v0.0.0-20180526074752-d9c87f5ffaf0",
+	"Time": "2018-05-26T07:47:52Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/revgrep@v0.0.0-20180526074752-d9c87f5ffaf0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/revgrep/@v/v0.0.0-20180526074752-d9c87f5ffaf0.mod"
+}
+{
+	"Path": "github.com/golangci/unconvert",
+	"Version": "v0.0.0-20180507085042-28b1c447d1f4",
+	"Time": "2018-05-07T08:50:42Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/golangci/unconvert@v0.0.0-20180507085042-28b1c447d1f4",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/golangci/unconvert/@v/v0.0.0-20180507085042-28b1c447d1f4.mod"
+}
+{
+	"Path": "github.com/google/go-cmp",
+	"Version": "v0.2.0",
+	"Time": "2018-02-02T21:19:42Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/google/go-cmp@v0.2.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/google/go-cmp/@v/v0.2.0.mod"
+}
+{
+	"Path": "github.com/hashicorp/hcl",
+	"Version": "v0.0.0-20180404174102-ef8a98b0bbce",
+	"Time": "2018-04-04T17:41:02Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/hashicorp/hcl@v0.0.0-20180404174102-ef8a98b0bbce",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/hashicorp/hcl/@v/v0.0.0-20180404174102-ef8a98b0bbce.mod"
+}
+{
+	"Path": "github.com/hpcloud/tail",
+	"Version": "v1.0.0",
+	"Time": "2016-04-28T00:30:50Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/hpcloud/tail@v1.0.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/hpcloud/tail/@v/v1.0.0.mod"
+}
+{
+	"Path": "github.com/inconshreveable/mousetrap",
+	"Version": "v1.0.0",
+	"Time": "2014-10-17T20:07:13Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/inconshreveable/mousetrap@v1.0.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/inconshreveable/mousetrap/@v/v1.0.0.mod"
+}
+{
+	"Path": "github.com/kisielk/gotool",
+	"Version": "v1.0.0",
+	"Time": "2018-02-21T18:54:26Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/kisielk/gotool@v1.0.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/kisielk/gotool/@v/v1.0.0.mod"
+}
+{
+	"Path": "github.com/kr/pretty",
+	"Version": "v0.1.0",
+	"Time": "2018-05-06T08:33:45Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/kr/pretty@v0.1.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/kr/pretty/@v/v0.1.0.mod"
+}
+{
+	"Path": "github.com/kr/pty",
+	"Version": "v1.1.1",
+	"Time": "2018-01-13T18:08:13Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/kr/pty/@v/v1.1.1.mod"
+}
+{
+	"Path": "github.com/kr/text",
+	"Version": "v0.1.0",
+	"Time": "2018-05-06T08:24:08Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/kr/text@v0.1.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/kr/text/@v/v0.1.0.mod"
+}
+{
+	"Path": "github.com/logrusorgru/aurora",
+	"Version": "v0.0.0-20181002194514-a7b3b318ed4e",
+	"Time": "2018-10-02T19:45:14Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/logrusorgru/aurora/@v/v0.0.0-20181002194514-a7b3b318ed4e.mod"
+}
+{
+	"Path": "github.com/magiconair/properties",
+	"Version": "v1.7.6",
+	"Time": "2018-02-14T20:58:39Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/magiconair/properties@v1.7.6",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/magiconair/properties/@v/v1.7.6.mod"
+}
+{
+	"Path": "github.com/mattn/go-colorable",
+	"Version": "v0.0.9",
+	"Time": "2017-08-01T03:06:07Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/mattn/go-colorable@v0.0.9",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mattn/go-colorable/@v/v0.0.9.mod"
+}
+{
+	"Path": "github.com/mattn/go-isatty",
+	"Version": "v0.0.3",
+	"Time": "2017-09-25T05:34:41Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/mattn/go-isatty@v0.0.3",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mattn/go-isatty/@v/v0.0.3.mod"
+}
+{
+	"Path": "github.com/mattn/go-runewidth",
+	"Version": "v0.0.4",
+	"Time": "2018-12-10T06:59:43Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/mattn/go-runewidth@v0.0.4",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mattn/go-runewidth/@v/v0.0.4.mod"
+}
+{
+	"Path": "github.com/mattn/goveralls",
+	"Version": "v0.0.2",
+	"Time": "2017-11-14T04:29:57Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mattn/goveralls/@v/v0.0.2.mod"
+}
+{
+	"Path": "github.com/mitchellh/go-homedir",
+	"Version": "v1.0.0",
+	"Time": "2018-08-24T00:42:36Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/mitchellh/go-homedir@v1.0.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mitchellh/go-homedir/@v/v1.0.0.mod"
+}
+{
+	"Path": "github.com/mitchellh/go-ps",
+	"Version": "v0.0.0-20170309133038-4fdf99ab2936",
+	"Time": "2017-03-09T13:30:38Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mitchellh/go-ps/@v/v0.0.0-20170309133038-4fdf99ab2936.mod"
+}
+{
+	"Path": "github.com/mitchellh/mapstructure",
+	"Version": "v0.0.0-20180220230111-00c29f56e238",
+	"Time": "2018-02-20T23:01:11Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/mitchellh/mapstructure@v0.0.0-20180220230111-00c29f56e238",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mitchellh/mapstructure/@v/v0.0.0-20180220230111-00c29f56e238.mod"
+}
+{
+	"Path": "github.com/mozilla/tls-observatory",
+	"Version": "v0.0.0-20180409132520-8791a200eb40",
+	"Time": "2018-04-09T13:25:20Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/mozilla/tls-observatory/@v/v0.0.0-20180409132520-8791a200eb40.mod"
+}
+{
+	"Path": "github.com/nbutton23/zxcvbn-go",
+	"Version": "v0.0.0-20171102151520-eafdab6b0663",
+	"Time": "2017-11-02T15:15:20Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/nbutton23/zxcvbn-go@v0.0.0-20171102151520-eafdab6b0663",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/nbutton23/zxcvbn-go/@v/v0.0.0-20171102151520-eafdab6b0663.mod"
+}
+{
+	"Path": "github.com/olekukonko/tablewriter",
+	"Version": "v0.0.1",
+	"Time": "2018-10-26T07:14:10Z",
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/olekukonko/tablewriter@v0.0.1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/olekukonko/tablewriter/@v/v0.0.1.mod"
+}
+{
+	"Path": "github.com/onsi/ginkgo",
+	"Version": "v1.6.0",
+	"Time": "2018-07-17T16:34:38Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/onsi/ginkgo@v1.6.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/onsi/ginkgo/@v/v1.6.0.mod"
+}
+{
+	"Path": "github.com/onsi/gomega",
+	"Version": "v1.4.2",
+	"Time": "2018-09-11T16:11:45Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/onsi/gomega@v1.4.2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/onsi/gomega/@v/v1.4.2.mod"
+}
+{
+	"Path": "github.com/pelletier/go-toml",
+	"Version": "v1.1.0",
+	"Time": "2018-01-18T22:54:55Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/pelletier/go-toml@v1.1.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/pelletier/go-toml/@v/v1.1.0.mod"
+}
+{
+	"Path": "github.com/pkg/errors",
+	"Version": "v0.8.1",
+	"Time": "2019-01-03T06:52:24Z",
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/pkg/errors@v0.8.1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/pkg/errors/@v/v0.8.1.mod"
+}
+{
+	"Path": "github.com/pmezard/go-difflib",
+	"Version": "v1.0.0",
+	"Time": "2016-01-10T10:55:54Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/pmezard/go-difflib@v1.0.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/pmezard/go-difflib/@v/v1.0.0.mod"
+}
+{
+	"Path": "github.com/rogpeppe/go-internal",
+	"Version": "v1.1.0",
+	"Time": "2019-01-14T11:19:56Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/rogpeppe/go-internal/@v/v1.1.0.mod"
+}
+{
+	"Path": "github.com/ryanuber/go-glob",
+	"Version": "v0.0.0-20170128012129-256dc444b735",
+	"Time": "2017-01-28T01:21:29Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/ryanuber/go-glob/@v/v0.0.0-20170128012129-256dc444b735.mod"
+}
+{
+	"Path": "github.com/shirou/gopsutil",
+	"Version": "v0.0.0-20180427012116-c95755e4bcd7",
+	"Time": "2018-04-27T01:21:16Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/shirou/gopsutil/@v/v0.0.0-20180427012116-c95755e4bcd7.mod"
+}
+{
+	"Path": "github.com/shirou/w32",
+	"Version": "v0.0.0-20160930032740-bb4de0191aa4",
+	"Time": "2016-09-30T03:27:40Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/shirou/w32/@v/v0.0.0-20160930032740-bb4de0191aa4.mod"
+}
+{
+	"Path": "github.com/shurcooL/go",
+	"Version": "v0.0.0-20180423040247-9e1955d9fb6e",
+	"Time": "2018-04-23T04:02:47Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/shurcoo!l/go@v0.0.0-20180423040247-9e1955d9fb6e",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/shurcoo!l/go/@v/v0.0.0-20180423040247-9e1955d9fb6e.mod"
+}
+{
+	"Path": "github.com/shurcooL/go-goon",
+	"Version": "v0.0.0-20170922171312-37c2f522c041",
+	"Time": "2017-09-22T17:13:12Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/shurcoo!l/go-goon@v0.0.0-20170922171312-37c2f522c041",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/shurcoo!l/go-goon/@v/v0.0.0-20170922171312-37c2f522c041.mod"
+}
+{
+	"Path": "github.com/sirupsen/logrus",
+	"Version": "v1.0.5",
+	"Time": "2018-03-11T22:51:37Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/sirupsen/logrus@v1.0.5",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/sirupsen/logrus/@v/v1.0.5.mod"
+}
+{
+	"Path": "github.com/spf13/afero",
+	"Version": "v1.1.0",
+	"Time": "2018-04-01T20:57:52Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/spf13/afero@v1.1.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/spf13/afero/@v/v1.1.0.mod"
+}
+{
+	"Path": "github.com/spf13/cast",
+	"Version": "v1.2.0",
+	"Time": "2018-02-14T17:49:49Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/spf13/cast@v1.2.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/spf13/cast/@v/v1.2.0.mod"
+}
+{
+	"Path": "github.com/spf13/cobra",
+	"Version": "v0.0.2",
+	"Time": "2018-03-21T14:39:34Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/spf13/cobra@v0.0.2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/spf13/cobra/@v/v0.0.2.mod"
+}
+{
+	"Path": "github.com/spf13/jwalterweatherman",
+	"Version": "v0.0.0-20180109140146-7c0cea34c8ec",
+	"Time": "2018-01-09T14:01:46Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/spf13/jwalterweatherman@v0.0.0-20180109140146-7c0cea34c8ec",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/spf13/jwalterweatherman/@v/v0.0.0-20180109140146-7c0cea34c8ec.mod"
+}
+{
+	"Path": "github.com/spf13/pflag",
+	"Version": "v1.0.3",
+	"Time": "2018-08-31T15:14:32Z",
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/spf13/pflag@v1.0.3",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/spf13/pflag/@v/v1.0.3.mod"
+}
+{
+	"Path": "github.com/spf13/viper",
+	"Version": "v1.0.2",
+	"Time": "2018-03-19T18:50:19Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/spf13/viper@v1.0.2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/spf13/viper/@v/v1.0.2.mod"
+}
+{
+	"Path": "github.com/stretchr/testify",
+	"Version": "v1.2.2",
+	"Time": "2018-06-09T11:55:18Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/github.com/stretchr/testify@v1.2.2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/github.com/stretchr/testify/@v/v1.2.2.mod"
+}
+{
+	"Path": "golang.org/x/crypto",
+	"Version": "v0.0.0-20190313024323-a1f597ede03a",
+	"Time": "2019-03-13T02:43:23Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190313024323-a1f597ede03a",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/golang.org/x/crypto/@v/v0.0.0-20190313024323-a1f597ede03a.mod"
+}
+{
+	"Path": "golang.org/x/net",
+	"Version": "v0.0.0-20190313220215-9f648a60d977",
+	"Time": "2019-03-13T22:02:15Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/golang.org/x/net@v0.0.0-20190313220215-9f648a60d977",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/golang.org/x/net/@v/v0.0.0-20190313220215-9f648a60d977.mod"
+}
+{
+	"Path": "golang.org/x/sync",
+	"Version": "v0.0.0-20180314180146-1d60e4601c6f",
+	"Time": "2018-03-14T18:01:46Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/golang.org/x/sync@v0.0.0-20180314180146-1d60e4601c6f",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/golang.org/x/sync/@v/v0.0.0-20180314180146-1d60e4601c6f.mod"
+}
+{
+	"Path": "golang.org/x/sys",
+	"Version": "v0.0.0-20190312061237-fead79001313",
+	"Time": "2019-03-12T06:12:37Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/golang.org/x/sys@v0.0.0-20190312061237-fead79001313",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/golang.org/x/sys/@v/v0.0.0-20190312061237-fead79001313.mod",
+	"GoVersion": "1.12"
+}
+{
+	"Path": "golang.org/x/text",
+	"Version": "v0.3.0",
+	"Time": "2017-12-14T13:08:43Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/golang.org/x/text@v0.3.0",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/golang.org/x/text/@v/v0.3.0.mod"
+}
+{
+	"Path": "golang.org/x/tools",
+	"Version": "v0.0.0-20190314010720-f0bfdbff1f9c",
+	"Time": "2019-03-15T21:40:10Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/golang.org/x/tools@v0.0.0-20190314010720-f0bfdbff1f9c",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/golang.org/x/tools/@v/v0.0.0-20190314010720-f0bfdbff1f9c.mod"
+}
+{
+	"Path": "gopkg.in/airbrake/gobrake.v2",
+	"Version": "v2.0.9",
+	"Time": "2016-11-22T14:53:54Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/gopkg.in/airbrake/gobrake.v2@v2.0.9",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/gopkg.in/airbrake/gobrake.v2/@v/v2.0.9.mod"
+}
+{
+	"Path": "gopkg.in/check.v1",
+	"Version": "v1.0.0-20180628173108-788fd7840127",
+	"Time": "2018-06-28T17:31:08Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/gopkg.in/check.v1@v1.0.0-20180628173108-788fd7840127",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/gopkg.in/check.v1/@v/v1.0.0-20180628173108-788fd7840127.mod"
+}
+{
+	"Path": "gopkg.in/errgo.v2",
+	"Version": "v2.1.0",
+	"Time": "2018-08-23T07:15:05Z",
+	"Indirect": true,
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/gopkg.in/errgo.v2/@v/v2.1.0.mod"
+}
+{
+	"Path": "gopkg.in/fsnotify.v1",
+	"Version": "v1.4.7",
+	"Time": "2018-01-10T05:33:47Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/gopkg.in/fsnotify.v1@v1.4.7",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/gopkg.in/fsnotify.v1/@v/v1.4.7.mod"
+}
+{
+	"Path": "gopkg.in/gemnasium/logrus-airbrake-hook.v2",
+	"Version": "v2.1.2",
+	"Time": "2017-06-01T21:22:28Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/gopkg.in/gemnasium/logrus-airbrake-hook.v2@v2.1.2",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/gopkg.in/gemnasium/logrus-airbrake-hook.v2/@v/v2.1.2.mod"
+}
+{
+	"Path": "gopkg.in/tomb.v1",
+	"Version": "v1.0.0-20141024135613-dd632973f1e7",
+	"Time": "2014-10-24T13:56:13Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/gopkg.in/tomb.v1@v1.0.0-20141024135613-dd632973f1e7",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/gopkg.in/tomb.v1/@v/v1.0.0-20141024135613-dd632973f1e7.mod"
+}
+{
+	"Path": "gopkg.in/yaml.v2",
+	"Version": "v2.2.1",
+	"Time": "2018-03-28T19:50:20Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/gopkg.in/yaml.v2@v2.2.1",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/gopkg.in/yaml.v2/@v/v2.2.1.mod"
+}
+{
+	"Path": "mvdan.cc/interfacer",
+	"Version": "v0.0.0-20180901003855-c20040233aed",
+	"Time": "2018-09-01T00:38:55Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/mvdan.cc/interfacer@v0.0.0-20180901003855-c20040233aed",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/mvdan.cc/interfacer/@v/v0.0.0-20180901003855-c20040233aed.mod"
+}
+{
+	"Path": "mvdan.cc/lint",
+	"Version": "v0.0.0-20170908181259-adc824a0674b",
+	"Time": "2017-09-08T18:12:59Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/mvdan.cc/lint@v0.0.0-20170908181259-adc824a0674b",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/mvdan.cc/lint/@v/v0.0.0-20170908181259-adc824a0674b.mod"
+}
+{
+	"Path": "mvdan.cc/unparam",
+	"Version": "v0.0.0-20190124213536-fbb59629db34",
+	"Time": "2019-02-09T19:02:45Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/mvdan.cc/unparam@v0.0.0-20190124213536-fbb59629db34",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/mvdan.cc/unparam/@v/v0.0.0-20190124213536-fbb59629db34.mod"
+}
+{
+	"Path": "sourcegraph.com/sourcegraph/go-diff",
+	"Version": "v0.5.1-0.20190210232911-dee78e514455",
+	"Time": "2019-02-10T23:29:11Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/sourcegraph.com/sourcegraph/go-diff@v0.5.1-0.20190210232911-dee78e514455",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/sourcegraph.com/sourcegraph/go-diff/@v/v0.5.1-0.20190210232911-dee78e514455.mod"
+}
+{
+	"Path": "sourcegraph.com/sqs/pbtypes",
+	"Version": "v0.0.0-20180604144634-d3ebe8f20ae4",
+	"Time": "2018-06-04T14:46:34Z",
+	"Indirect": true,
+	"Dir": "/Users/melvin/Documents/libs/go/pkg/mod/sourcegraph.com/sqs/pbtypes@v0.0.0-20180604144634-d3ebe8f20ae4",
+	"GoMod": "/Users/melvin/Documents/libs/go/pkg/mod/cache/download/sourcegraph.com/sqs/pbtypes/@v/v0.0.0-20180604144634-d3ebe8f20ae4.mod"
+}
