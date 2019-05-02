@@ -25,9 +25,19 @@ func (r *Results) HasModules() bool {
 }
 
 func (r *Results) print(w io.Writer) {
+	needSpacing := false
+
 	if len(r.Updated) > 0 {
+		needSpacing = true
+
 		table := tablewriter.NewWriter(w)
 		table.SetHeader([]string{"Module", "Current Version", "New Version", "Indirect"})
+		table.SetColumnAlignment([]int{
+			tablewriter.ALIGN_LEFT,
+			tablewriter.ALIGN_CENTER,
+			tablewriter.ALIGN_CENTER,
+			tablewriter.ALIGN_CENTER,
+		})
 		for _, m := range r.Updated {
 			table.Append([]string{
 				m.Path,
@@ -40,8 +50,18 @@ func (r *Results) print(w io.Writer) {
 	}
 
 	if len(r.Replaced) > 0 {
+		if needSpacing {
+			fmt.Fprintln(w)
+		}
+		needSpacing = true
+
 		table := tablewriter.NewWriter(w)
 		table.SetHeader([]string{"Module", "Replaced By", "Indirect"})
+		table.SetColumnAlignment([]int{
+			tablewriter.ALIGN_LEFT,
+			tablewriter.ALIGN_LEFT,
+			tablewriter.ALIGN_CENTER,
+		})
 		for _, m := range r.Replaced {
 			table.Append([]string{
 				m.Path,
@@ -53,8 +73,17 @@ func (r *Results) print(w io.Writer) {
 	}
 
 	if len(r.Old) > 0 {
+		if needSpacing {
+			fmt.Fprintln(w)
+		}
+
 		table := tablewriter.NewWriter(w)
 		table.SetHeader([]string{"Module", "Last update", "Indirect"})
+		table.SetColumnAlignment([]int{
+			tablewriter.ALIGN_LEFT,
+			tablewriter.ALIGN_CENTER,
+			tablewriter.ALIGN_CENTER,
+		})
 		for _, m := range r.Old {
 			monthsPassed := time.Since(*m.Time) / (24 * time.Hour) / 30
 			table.Append([]string{
