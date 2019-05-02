@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Nivl/check-deps/modutil"
+	"github.com/Nivl/check-go-deps/modutil"
 	flag "github.com/spf13/pflag"
 )
 

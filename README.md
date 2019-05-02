@@ -1,6 +1,6 @@
-# check-deps
+# check-go-deps
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/nivl/check-deps)](https://goreportcard.com/report/github.com/nivl/check-deps)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nivl/check-go-deps)](https://goreportcard.com/report/github.com/nivl/check-go-deps)
 
 Check dep is a program that parses the `go.mod` a of package (current
 directory) and prints all the modules that need to be updated, or that haven't
@@ -8,11 +8,11 @@ received any updates in the last 6 months (they might no longer be maintained).
 
 ## Install
 
-`go get -u github.com/Nivl/check-deps`
+`go get -u github.com/Nivl/check-go-deps`
 
 ## usage
 
-`check-deps [flags]`
+`check-go-deps [flags]`
 
 | Flag         | Description                                             |
 | ------------ | ------------------------------------------------------- |
@@ -23,7 +23,7 @@ received any updates in the last 6 months (they might no longer be maintained).
 ## Output
 
 ```
-❯ check-deps --old --indirect -i github.com/Nivl
+❯ check-go-deps --old --indirect -i github.com/Nivl
 +-------------------------------------+------------------------------------+------------------------------------+----------+
 |               MODULE                |          CURRENT VERSION           |            NEW VERSION             | INDIRECT |
 +-------------------------------------+------------------------------------+------------------------------------+----------+
