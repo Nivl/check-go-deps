@@ -1,36 +1,16 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"os"
 	"strconv"
 	"strings"
 	"time"
 
+	"github.com/Nivl/check-deps/modutil"
 	"github.com/olekukonko/tablewriter"
 	flag "github.com/spf13/pflag"
 )
-
-// Module represents a single Go module
-type Module struct {
-	Path     string       // module path
-	Version  string       // module version
-	Versions []string     // available module versions (with -versions)
-	Replace  *Module      // replaced by this module
-	Time     *time.Time   // time version was created
-	Update   *Module      // available update, if any (with -u)
-	Main     bool         // is this the main module?
-	Indirect bool         // is this module only an indirect dependency of main module?
-	Dir      string       // directory holding files for this module, if any
-	GoMod    string       // path to go.mod file for this module, if any
-	Error    *ModuleError // error loading module
-}
-
-// ModuleError contains the error message that occurred when loading the module
-type ModuleError struct {
-	Err string
-}
 
 // Flags represents all the flags accepted by the CLI
 type Flags struct {
@@ -41,9 +21,9 @@ type Flags struct {
 
 // Results contains all the modules that need to be reported
 type Results struct {
-	Updated  []*Module
-	Replaced []*Module
-	Old      []*Module
+	Updated  []*modutil.Module
+	Replaced []*modutil.Module
+	Old      []*modutil.Module
 }
 
 // HasModules checks if the results contains any modules
@@ -65,24 +45,10 @@ func main() {
 	flag.StringSliceVarP(&flags.IgnoredPkgs, "ignore", "i", []string{}, "coma separated list of packages to ignore")
 	flag.Parse()
 
-	// get an invalid JSON list of all modules
-	out, err := Run("go", "list", "-m", "-u", "-json", "all")
+	modules, err := modutil.ParseCwd()
 	if err != nil {
 		exitStatus = 1
-		fmt.Fprintln(os.Stderr, err.Error())
-		return
-	}
-
-	// make list a valid JSON list
-	out = "[" + out + "]"
-	out = strings.ReplaceAll(out, "}\n{", "},\n{")
-
-	// Parse the JSON list into or Go Slice
-	modules := []*Module{}
-	err = json.Unmarshal([]byte(out), &modules)
-	if err != nil {
-		exitStatus = 1
-		fmt.Fprintln(os.Stderr, err.Error())
+		fmt.Fprintln(os.Stderr, fmt.Sprintf("could not parse the go.mod file: %s", err.Error()))
 		return
 	}
 
@@ -143,7 +109,7 @@ func main() {
 }
 
 // checkModule checks a single module and prints its status
-func checkModule(f *Flags, m *Module, r *Results) {
+func checkModule(f *Flags, m *modutil.Module, r *Results) {
 	for _, pkg := range f.IgnoredPkgs {
 		if strings.HasPrefix(m.Path, pkg) {
 			return
